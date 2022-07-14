@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Genearator</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="lib/css/app.css" />
+    <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/qrcode.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="m-5">
+            <h2 class="text-center">QR Code Generator 0.0.1v</h2>
+            <div class="form-group">
+                <textarea class="form-control" id="data" rows="5"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="generate()">Generate <i class="fa fas-check-circle"></i></button>
+            <button type="button" class="btn btn-warning" onclick="clean()">Clear <i class="fa fas-trash"></i></button>
+            <button type="button" class="btn btn-success" onclick="relord()">Reloard <i class="fa fas-refresh"></i></button>
+            <div class="d-flex justify-content-center">
+                <div id="qr_area" class="m-3"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="lib/js/app.min.js"></script>
+</body>
+</html>
